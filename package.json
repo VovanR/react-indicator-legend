@@ -1,0 +1,30 @@
+{
+  "name": "react-indicator-legend",
+  "version": "0.0.0",
+  "description": "React indicator legend component",
+  "license": "MIT",
+  "repository": "VovanR/react-indicator-legend",
+  "author": {
+    "name": "Vladimir Rodkin",
+    "email": "mail@vovanr.com",
+    "url": "https://github.com/VovanR"
+  },
+  "scripts": {
+    "prepush": "npm test",
+    "test": "xo"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "react",
+    "component",
+    "indicator",
+    "legend"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^0.10.2",
+    "xo": "^0.12.1"
+  }
+}
