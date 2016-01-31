@@ -17,9 +17,9 @@ npm install --save react-indicator-legend
 ## Usage
 
 ```js
-import ReactIndicatorLegend from 'react-indicator-legend';
+import IndicatorLegend from 'react-indicator-legend';
 
-ReactDOM.render(<ReactIndicatorLegend />, document.getelementById('app'));
+ReactDOM.render(<IndicatorLegend />, document.getElementById('app'));
 ```
 
 ## License
