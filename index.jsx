@@ -3,7 +3,10 @@ import React from 'react';
 const IndicatorLegend = React.createClass({
 	render() {
 		return (
-			<div {...this.props}>
+			<div
+				className="indicator-legend"
+				{...this.props}
+				>
 				Hello World!
 			</div>
 		);

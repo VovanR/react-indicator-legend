@@ -11,11 +11,12 @@
   },
   "scripts": {
     "prepush": "npm test",
-    "test": "xo"
+    "test": "xo && ava"
   },
   "files": [
-    "index.js"
+    "index.jsx"
   ],
+  "main": "index.jsx",
   "keywords": [
     "react",
     "component",
@@ -24,7 +25,15 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "ava": "^0.11.0",
     "husky": "^0.10.2",
+    "react": "^0.14.7",
+    "react-addons-test-utils": "^0.14.7",
     "xo": "^0.12.1"
+  },
+  "ava": {
+    "require": [
+      "babel-core/register"
+    ]
   }
 }
