@@ -4,4 +4,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import IndicatorLegend from '../index.jsx';
 
-ReactDOM.render(<IndicatorLegend />, document.getElementById('app'));
+require('../style.css');
+
+ReactDOM.render(<IndicatorLegend onClickItem={val => {console.log(val)}} />, document.getElementById('app'));

@@ -13,5 +13,16 @@ test(t => {
 	const result = createComponent(C);
 
 	t.is(result.type, 'div');
-	t.is(result.props.children, 'Hello World!');
+});
+
+test(t => {
+	const result = createComponent(C);
+
+	t.true(Array.isArray(result.props.children));
+});
+
+test(t => {
+	const result = createComponent(C);
+
+	t.true(ReactTestUtils.isElement(result.props.children[0]));
 });
