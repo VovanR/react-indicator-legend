@@ -1,14 +1,19 @@
 module.exports = {
-	entry: './example/app.jsx',
+	entry: [
+		'./example/app.jsx'
+	],
 	output: {
 		path: './example',
-		filename: 'bundle.js'
+		filename: 'bundle.js',
+		publicPath: '/static/'
 	},
 	module: {
 		loaders: [
 			{
 				test: /\.jsx$/,
-				loader: 'babel'
+				loaders: [
+					'babel'
+				]
 			}
 		]
 	},
@@ -19,4 +24,4 @@ module.exports = {
 	resolve: {
 		extensions: ['', '.js', '.jsx']
 	}
-}
+};
