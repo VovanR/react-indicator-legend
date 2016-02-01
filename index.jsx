@@ -12,7 +12,7 @@ const colors = [
 
 const IndicatorLegend = React.createClass({
 	propTypes: {
-		onClick: React.PropTypes.func
+		onClickItem: React.PropTypes.func
 	},
 
 	_handleClick(val) {
