@@ -6,4 +6,12 @@ import IndicatorLegend from '../index.jsx';
 
 require('../style.css');
 
-ReactDOM.render(<IndicatorLegend onClickItem={val => {console.log(val);}} />, document.getElementById('app'));
+function onClickItem(val) {
+	console.log(val);
+}
+
+const indicator = (
+	<IndicatorLegend onClickItem={onClickItem} />
+);
+
+ReactDOM.render(indicator, document.getElementById('app'));
